@@ -1,85 +1,338 @@
 :root {
---bg-color: #cbe0f8;
---primary-blue: #1d2087;
---card-bg: #ffffff;
---btn-hover: #141663;
+    --bg-color: #cbe0f8;
+    --primary-blue: #1d2087;
+    --card-bg: #ffffff;
+    --btn-hover: #141663;
 }
+
+
+/* =========================
+   BODY
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  background-color: var(--bg-color);
-  color: var(--primary-blue);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 40px;
+    background-color: var(--bg-color);
+    color: var(--primary-blue);
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 40px;
+
+    min-height: 100vh;
 }
-.span{
-background-color: var(--card-bg);
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.span {
+    background-color: var(--card-bg);
+
     box-shadow: 0 4px 12px rgba(29, 32, 135, 0.15);
+
     border: 2px solid var(--primary-blue);
-    height: 500px;
-    width: 800px;
+
+    width: 100%;
+    max-width: 800px;
+
+    min-height: 500px;
+
     border-radius: 20px;
-    margin-left: 300px;
-    margin-top: 50px;
+
+    margin: 50px auto 0;
+
     padding: 20px;
 }
+
+
+/* =========================
+   QUESTION
+========================= */
 
 #question-container {
     padding: 30px;
+
     margin-bottom: 30px;
+
     border: 2px solid black;
+
     border-radius: 10px;
+
     text-align: center;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    line-height: 1.5;
 }
+
+
+/* =========================
+   ANSWERS
+========================= */
 
 #answers-container {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 20px;
-    
+
     text-align: left;
+
     margin-bottom: 8px;
+
     background-color: #f0f5fc;
+
     color: var(--primary-blue);
 
+    padding: 15px;
+
+    border-radius: 10px;
 }
+
+
+/* =========================
+   ANSWER BOX
+========================= */
 
 .answer-container {
     padding: 20px;
+
     border: 2px solid black;
+
     border-radius: 10px;
+
     cursor: pointer;
+
+    background-color: white;
+
+    transition: 0.2s;
 }
 
 .answer-container:hover {
     background-color: #eee;
+
+    border-color: var(--primary-blue);
 }
 
-#next-btn {
-    margin-top: 100px;
-    padding:10px;
+
+/* Radio button */
+
+.answer-container input {
     cursor: pointer;
-    color: #0c0c0c;
-        height: 50px;
-        width: 100px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
 }
-.D1{
-    display: flex;
-    
+
+
+/* Answer text */
+
+.answer-container label {
+    cursor: pointer;
+
+    font-size: 17px;
 }
-img{
-    height: 170px;
-    width: 170px;
-    margin-left: 600px;
-    position: relative;
-    bottom: 110px;
-}
-.p1{
-    position: relative;
-    bottom: 150px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+/* =========================
+   NEXT BUTTON
+========================= */
+
+#next-btn {
+    display: block;
+
+    margin: 40px auto 0;
+
+    padding: 10px;
+
+    height: 50px;
+
+    width: 100px;
+
+    border: none;
+
+    border-radius: 6px;
+
     font-weight: bold;
+
+    cursor: pointer;
+
+    color: white;
+
+    background-color: var(--primary-blue);
+
+    transition: background-color 0.2s ease;
+}
+
+#next-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.D1 {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+img {
+    height: 170px;
+
+    width: 170px;
+
+    object-fit: contain;
+
+    margin: 0;
+
+    position: static;
+}
+
+
+.p1 {
+    position: static;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .span {
+        margin: 30px auto 0;
+
+        width: 100%;
+
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .span {
+        margin-top: 15px;
+
+        padding: 15px;
+
+        border-radius: 15px;
+
+        min-height: auto;
+    }
+
+
+    #question-container {
+        padding: 20px;
+
+        margin-bottom: 20px;
+
+        font-size: 18px;
+    }
+
+
+    /* 1 answer per row */
+
+    #answers-container {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 10px;
+    }
+
+
+    .answer-container {
+        padding: 15px;
+
+        font-size: 16px;
+    }
+
+
+    .answer-container label {
+        font-size: 16px;
+    }
+
+
+    #next-btn {
+        width: 100%;
+
+        margin-top: 25px;
+    }
+
+
+    .D1 {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    img {
+        width: 100px;
+
+        height: 100px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+    .span {
+        padding: 10px;
+    }
+
+
+    #question-container {
+        padding: 15px;
+
+        font-size: 16px;
+    }
+
+
+    .answer-container {
+        padding: 12px;
+    }
+
+
+    .answer-container label {
+        font-size: 14px;
+    }
+
 }
