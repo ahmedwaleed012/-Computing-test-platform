@@ -1,169 +1,114 @@
 {
-  "quiz_title": "Computer Fundamentals & C++ - Multiple Choice Quiz",
+  "quiz_title": "C++ Basics - Datatypes, Variables, If, Loops, Arrays & Functions",
   "questions": [
     {
       "id": 1,
-      "category": "Computer Fundamentals & Logic Gates",
-      "question": "Which computer generation introduced integrated circuits?",
+      "category": "Datatypes & Variables",
+      "question": "Which data type is best for storing a student's average mark such as 85.5?",
       "options": [
-        "A) 1st Generation",
-        "B) 2nd Generation",
-        "C) 3rd Generation",
-        "D) 4th Generation"
+        "A) int",
+        "B) char",
+        "C) double",
+        "D) bool"
       ]
     },
     {
       "id": 2,
-      "category": "Computer Fundamentals & Logic Gates",
-      "question": "Which logic gate gives an output of 1 only if all inputs are 1?",
+      "category": "Datatypes & Variables",
+      "question": "What is the value of x after this code?\n\nint x = 10;\nx = x + 5;",
       "options": [
-        "A) OR Gate",
-        "B) AND Gate",
-        "C) NOT Gate",
-        "D) NOR Gate"
+        "A) 5",
+        "B) 10",
+        "C) 15",
+        "D) 20"
       ]
     },
     {
       "id": 3,
-      "category": "Computer Fundamentals & Logic Gates",
-      "question": "What is the output of a NOT gate if the input is 0?",
+      "category": "If Statements",
+      "question": "What will be printed?\n\nint age = 18;\n\nif (age >= 18)\n    cout << \"Adult\";\nelse\n    cout << \"Child\";",
       "options": [
-        "A) 0",
-        "B) 1",
-        "C) Undefined",
-        "D) -1"
+        "A) Child",
+        "B) Adult",
+        "C) 18",
+        "D) Error"
       ]
     },
     {
       "id": 4,
-      "category": "Hardware, Software & Data Representation",
-      "question": "How many bits make up one byte?",
+      "category": "If Statements",
+      "question": "Which operator means \"not equal to\" in C++?",
       "options": [
-        "A) 4",
-        "B) 8",
-        "C) 16",
-        "D) 32"
+        "A) ==",
+        "B) =",
+        "C) !=",
+        "D) >="
       ]
     },
     {
       "id": 5,
-      "category": "Hardware, Software & Data Representation",
-      "question": "Which of the following is an example of system software?",
+      "category": "Loops",
+      "question": "How many times will the loop run?\n\nfor (int i = 0; i < 5; i++) {\n    cout << i;\n}",
       "options": [
-        "A) Microsoft Word",
-        "B) Operating System (e.g., Windows, Linux)",
-        "C) Web Browser",
-        "D) Antivirus Software"
-      ]
-    },
-    {
-      "id": 6,
-      "category": "Hardware, Software & Data Representation",
-      "question": "Which unit of digital storage is larger than a Gigabyte (GB)?",
-      "options": [
-        "A) Megabyte (MB)",
-        "B) Kilobyte (KB)",
-        "C) Terabyte (TB)",
-        "D) Byte"
-      ]
-    },
-    {
-      "id": 7,
-      "category": "C++ Syntax & Functions",
-      "question": "In C++, lines starting with #include <iostream> are called:",
-      "options": [
-        "A) Executable statements",
-        "B) Preprocessor directives",
-        "C) Main functions",
-        "D) Variable initializations"
-      ]
-    },
-    {
-      "id": 8,
-      "category": "C++ Syntax & Functions",
-      "question": "What is the main() function in a program called?",
-      "options": [
-        "A) Entry point",
-        "B) Header file",
-        "C) Preprocessor directive",
-        "D) Insertion operator"
-      ]
-    },
-    {
-      "id": 9,
-      "category": "C++ Syntax & Functions",
-      "question": "Which operator is used with cout for output in C++?",
-      "options": [
-        "A) >> (Extraction operator)",
-        "B) << (Insertion operator)",
-        "C) == (Equality operator)",
-        "D) % (Modulus operator)"
-      ]
-    },
-    {
-      "id": 10,
-      "category": "C++ Data Types & Memory",
-      "question": "What is the size of an int data type in C++ according to the course notes?",
-      "options": [
-        "A) 1 byte",
-        "B) 4 bytes",
-        "C) 8 bytes",
-        "D) Variable size"
-      ]
-    },
-    {
-      "id": 11,
-      "category": "C++ Data Types & Memory",
-      "question": "What is the size of a double data type in C++?",
-      "options": [
-        "A) 1 byte",
-        "B) 4 bytes",
-        "C) 8 bytes",
-        "D) 16 bytes"
-      ]
-    },
-    {
-      "id": 12,
-      "category": "C++ Data Types & Memory",
-      "question": "Which data type is used to store single characters like 'a' or '#' in C++?",
-      "options": [
-        "A) string",
-        "B) char",
-        "C) bool",
-        "D) float"
-      ]
-    },
-    {
-      "id": 13,
-      "category": "Operators & Programming Tools",
-      "question": "What is the output of the modulus operation 10 % 3 in C++?",
-      "options": [
-        "A) 3",
-        "B) 3.33",
-        "C) 1",
+        "A) 4",
+        "B) 5",
+        "C) 6",
         "D) 0"
       ]
     },
     {
-      "id": 14,
-      "category": "Operators & Programming Tools",
-      "question": "Which C++ operator increases the value of a variable by 1?",
+      "id": 6,
+      "category": "Loops",
+      "question": "What is the output?\n\nfor (int i = 1; i <= 3; i++) {\n    cout << i << \" \";\n}",
       "options": [
-        "A) +",
-        "B) ++",
-        "C) +=",
-        "D) %"
+        "A) 0 1 2",
+        "B) 1 2",
+        "C) 1 2 3",
+        "D) 0 1 2 3"
       ]
     },
     {
-      "id": 15,
-      "category": "Operators & Programming Tools",
-      "question": "What software application provides tools to write, test, and debug code all in one place?",
+      "id": 7,
+      "category": "Arrays",
+      "question": "What is the value of arr[2]?\n\nint arr[4] = {10, 20, 30, 40};",
       "options": [
-        "A) Compiler",
-        "B) Preprocessor",
-        "C) IDE (Integrated Development Environment)",
-        "D) Linker"
+        "A) 10",
+        "B) 20",
+        "C) 30",
+        "D) 40"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "Arrays",
+      "question": "Which index represents the first element of an array in C++?",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) -1",
+        "D) 2"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "Functions",
+      "question": "What will this function return when called as add(3, 4)?\n\nint add(int a, int b) {\n    return a + b;\n}",
+      "options": [
+        "A) 1",
+        "B) 7",
+        "C) 12",
+        "D) 0"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "Functions",
+      "question": "Which keyword is used to send a value back from a function?",
+      "options": [
+        "A) cout",
+        "B) void",
+        "C) return",
+        "D) function"
       ]
     }
   ]
